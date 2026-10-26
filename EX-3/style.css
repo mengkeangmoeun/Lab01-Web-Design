@@ -1,0 +1,10 @@
+/* TODO */
+button{
+    background-color: rgb(255, 127, 149);
+    border-radius: 10px;
+    border-color: rgb(255, 127, 149);
+}
+button:hover{
+    background-color: rgb(227, 35, 227);
+    border-color: black;
+}
