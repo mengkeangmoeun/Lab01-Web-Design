@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style1.css">
+    <style>
+
+      body{
+        margin: 0;
+        padding: 0;
+        background: pink;
+        padding-left: 10em; /*add*/
+        padding-right: 10em; /*add*/
+      }
+  
+      .container {
+        display: flex;
+        flex-direction: column;/*add*/
+        gap: 1em;/*add*/
+        height: 100vh;
+        background: greenyellow;
+      }
+
+      header,footer {
+        height: 100px; /*add*/
+        background: grey;
+      }
+
+      main {
+        flex-grow: 1; /*add*/
+        background: grey;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>Header</header>
+      <main>Main</main>
+      <footer>Footer</footer>
+      </section>
+    </div>
+  </body>
+</html>
