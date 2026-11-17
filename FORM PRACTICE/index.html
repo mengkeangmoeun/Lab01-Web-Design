@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #547f94;
+        }
+        .card {
+            width: 550px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        h1 {
+            margin: 0;
+            padding: 15px;
+            text-align: center;
+            color: gray;
+            background-color: #eeeeee;
+        }
+        .body {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .full {
+            grid-column: 1 / 3;
+        }
+        label {
+            display: block;
+            color: #16b58f;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 6px;
+            border: 1px solid lightgray;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="range"] {
+            width: 60%;
+            vertical-align: middle;
+        }
+        textarea {
+            height: 70px;
+        }
+        .footer {
+            padding: 10px 20px;
+            text-align: right;
+            background-color: #eeeeee;
+        }
+        .options{
+            font-size: 14px;
+            white-space: nowrap;
+        }
+        .income {
+            background-color: #16b58f;
+            color: white;
+            font-weight: bold;
+            padding: 3px 8px;
+            border-radius: 4px;
+            vertical-align: middle;
+        }
+        button {
+            background-color: #16b58f;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 8px 16px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <h1>Create Account</h1>
+    <form>
+        <div class="body">
+            <div>
+                <label>First name *</label>
+                <input type="text" placeholder="enter your first name">
+            </div>
+            <div>
+                <label>Last name</label>
+                <input type="text" placeholder="enter your last name">
+            </div>
+            <div class="full">
+                <label>Email *</label>
+                <input type="email" placeholder="enter your email">
+            </div>
+            <div>
+                <label>Password *</label>
+                <input type="password" placeholder="enter your password">
+            </div>
+            <div>
+                <label>Confirm Password *</label>
+                <input type="password" placeholder="enter your password again">
+            </div>
+            <div>
+                <label>Gender:</label>
+                <input type="radio" name="gender"> Male
+                <input type="radio" name="gender"> Female
+            </div>
+            <div>
+                <label>Hobbies</label>
+                <div class="options">
+                    <input type="checkbox"> Music
+                    <input type="checkbox"> Sports
+                    <input type="checkbox"> Travel
+                    <input type="checkbox"> Movies
+                </div>
+                
+            </div>
+            <div>
+                <label>Source of Income</label>
+                <select>
+                <option>Employed</option>
+                <option>Self-employed</option>
+                <option>Student</option>
+                </select>
+            </div>
+            <div>
+                <label>Income</label>
+                <input type="range" min="0" max="100" value="20">
+                <span class="income">20K</span>
+            </div>
+            <div>
+                <label>Upload Profile Picture</label>
+                <input type="file">
+            </div>
+            <div>
+                <label>Age</label>
+                <input type="number" value="18">
+            </div>
+            <div class="full">
+                <label>Bio</label>
+                <textarea></textarea>
+            </div>
+            </div>
+            <div class="footer">
+            <button type="submit">Create</button>
+            </div>
+    </form>
+</div>
+
+</body>
+</html>

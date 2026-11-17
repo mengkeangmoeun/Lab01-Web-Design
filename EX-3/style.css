@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+header, footer{
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+main, sidebar {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    font-size: 14px;
+}
+main{
+    background-color: #ddd;
+    margin: 0 0 0 15px; /* top(0) right(0) buttom(0) left(15px) */
+}
+sidebar{
+    background-color: #ddd;
+    margin: 0 0 0 15px;
+}
+@media ( min-width: 600px){
+    main,
+    sidebar {
+        flex: 1;
+    }
+}
+@media (min-width: 900px){
+    main{
+        flex: 4;
+    }
+    sizebar{
+        flex: 1;
+    }
+}
